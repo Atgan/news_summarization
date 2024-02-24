@@ -1,0 +1,36 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/*
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore database files
+*.db
+
+# Ignore sensitive configuration files
+config.ini
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore cache directories
+__pycache__/
+.cache/
+
+#ignore model weights
+news_api/nlp_summarization/my_awesome_billsum_model*

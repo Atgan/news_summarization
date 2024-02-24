@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Start Blog Layout -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 item">
+                {% for obj in data %}
+                <div class="item-in">
+                    <h4>{{ obj['title'] }}</h4>
+                    <div class="seperator"></div>
+                    <p>{{ obj['summary'] }}</p>
+                    <a href="#">Read More
+                        <i class="fa fa-long-arrow-right"></i>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
